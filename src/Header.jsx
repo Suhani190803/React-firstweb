@@ -1,8 +1,9 @@
-function Header(){
+function Header({headerInfo,cname}){
+    // const {headerInfo,cname}=props
     return(
         <div>
-            <h1>welcome to Header Section</h1>
-            <h2>Welcome to hell guys....!!!!!!</h2>
+            <h3>Email is : {headerInfo.email}</h3>
+            <h4>Password is : {cname}</h4>
         </div>
     )
 }

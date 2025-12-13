@@ -2,27 +2,28 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import { Container } from 'react-bootstrap';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function App() {
-  
+   const headerInfo ={
+      email : "sm123@gmail.com",
+      password : "345667",
+      city : "Bhopal"
+
+   }
   return (
     <div className="App">
         
-         {/* <Header/> */}
+         <Header  headerInfo ={headerInfo} cname ="GuruvarPvtLmt"/>
           
-           <Container fluid>
-           <Container>
-            <Row>
-              <Col>
-               Welcome to Ayodhyaa
-              </Col>
+           
+         {/* <h1 className="text-3xl font-bold underline">
+          Hello world!
+        </h1> */}
               
-            </Row>
-           </Container>
-          </Container>
+              
+            
+           
+          
           {/* <Footer/> */}
          </div>
          
