@@ -9,6 +9,7 @@ function App() {
     age : 34 ,
     city : "Bihar",
   }
+  const status = true;
   return (
     <div className="App">
       <h1>{name}</h1>
@@ -20,6 +21,8 @@ function App() {
 
       <div>{obj.city}</div>
       <h3>{10+30}</h3>
+      {(status) ? <h4 style ={{color : "red",  backgroundColor :"yellow"}}>Welcome back guyss</h4> : <h4>Not welcoming guyss</h4>}
+    
     </div>
   );
 }
