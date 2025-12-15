@@ -1,18 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faSadCry } from '@fortawesome/free-regular-svg-icons/faSadCry';
+import Header from './Header';
 
 
 function App() {
+  let displayData =()=>{
+    alert("Welcome to you")
+  }
+  const addData=(a,b)=>{
+    console.log(a+b);
+    
+  }
   return (
     <div className="App">
-     <FontAwesomeIcon icon={faWhatsapp} className='text-red-900'/>
-     <FontAwesomeIcon icon={faPhone} className='text-blue-900'/>
-     <FontAwesomeIcon icon={faSadCry} className='text-green-800'/>
-     <h1>Welcome to our  website....!</h1>
+
+     {/* <Header/> */}
+     <button className='bg-[red] p-[10px] mr-4' onClick={()=>addData(10,45)} >Add Data</button>
+     <button className='bg-[red] p-[10px]' onClick={displayData} >Save</button>
+    
     </div>
   );
 }

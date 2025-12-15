@@ -1,10 +1,9 @@
-function Header({headerInfo,cname,children}){
-    // const {headerInfo,cname}=props
+import './Header.css'
+// import React from 'react'
+function Header(){
+    
     return(
-        <div>
-            {children}
-            {/* <h3>Email is : {headerInfo.email}</h3> */}
-            {/* <h4>Password is : {cname}</h4> */}
+        <div className='Header'>
             <h3>Header Part</h3>
         </div>
     )
