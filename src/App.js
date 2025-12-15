@@ -1,34 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import Footer from './Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faSadCry } from '@fortawesome/free-regular-svg-icons/faSadCry';
+
 
 function App() {
-   const headerInfo ={
-      email : "sm123@gmail.com",
-      password : "345667",
-      city : "Bhopal"
-
-   }
   return (
     <div className="App">
-        
-         <Header  headerInfo ={headerInfo} cname ="GuruvarPvtLmt"/>
-          
-           
-         {/* <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1> */}
-              
-              
-            
-           
-          
-          {/* <Footer/> */}
-         </div>
-         
-         
-      
+     <FontAwesomeIcon icon={faWhatsapp} className='text-red-900'/>
+     <FontAwesomeIcon icon={faPhone} className='text-blue-900'/>
+     <FontAwesomeIcon icon={faSadCry} className='text-green-800'/>
+     <h1>Welcome to our  website....!</h1>
+    </div>
   );
 }
 
