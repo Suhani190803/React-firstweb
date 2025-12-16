@@ -17,3 +17,32 @@
 .activeMenu{
   left:0%;
 }
+.modalOverlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0, 0.5);
+  display: none;
+}
+.modalShow{
+  display: block;
+}
+.ModalDiv{
+  width: 320px;
+  position: fixed;
+  height: 320px;
+  background-color: white;
+  left: 50%;
+  top: -500px;
+  transition: 0.5s;
+  transform: translate(-50%,-50%);
+}
+.showModalDiv{
+  top: 50%;
+}
+.en{
+  position: fixed;
+  right: -30px;
+  transform: rotate(90deg);
+  top: 100px;
+}

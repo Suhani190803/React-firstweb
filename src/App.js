@@ -12,8 +12,19 @@ function App() {
    
   const[status,setStatus]=useState(false);
   const[menustatus,setMenustatus]=useState(false);
+  
+  const[modelstatus,setModalstatus]=useState(false);
+
+
   return (
     <div className="App">
+      <button  className='en' onClick={()=>setModalstatus(true)}>Enquire Now</button>
+       <div onClick={()=>setModalstatus(false)} className={`modalOverlay ${modelstatus ? 'modalShow': '' }`}></div>
+       <div className={`ModalDiv ${modelstatus ? 'showModalDiv': '' }`}>
+        <h3>Enquiry Now <span onClick={()=>setModalstatus(false)}>&times;</span></h3>
+       </div>
+
+
       <button className='micon' onClick={()=>setMenustatus(!menustatus)}>
         {menustatus ? <span>&times;</span> : <span>&#9776;</span>}
         
