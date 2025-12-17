@@ -1,48 +1,33 @@
-.menu{
-  width: 80px;
-  position: fixed;
-  left: -100%;
-  height: 100vh;
-  background-color: burlywood;
+.faqouter{
+  width: 1320px;
+  margin: auto;
+  
+}
+.App h1{
+  text-align: center;
+  font-weight: bold;
+}
+.faqItems{
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+.faqItems h2{
+  margin: 0px;
+  padding: 8px;
+  background-color: #282c34;
+  color: white;
   text-align: left;
-  transition: 0.5s;
 }
-.menu ul li{
-  padding: 10px 0px;
+.faqItems p{
+  text-align: left;
+  height: 0px;
+  margin: 0px;
+  transform: scaleY(0);
+  padding: 0px;
 }
-.micon{
-  position: absolute;
-  right: 10px;
+.activeAns{
+  height: auto;
+  transform: scaleY(1);
+  padding : 10px;
 }
-.activeMenu{
-  left:0%;
-}
-.modalOverlay{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: rgba(0,0,0, 0.5);
-  display: none;
-}
-.modalShow{
-  display: block;
-}
-.ModalDiv{
-  width: 320px;
-  position: fixed;
-  height: 320px;
-  background-color: white;
-  left: 50%;
-  top: -500px;
-  transition: 0.5s;
-  transform: translate(-50%,-50%);
-}
-.showModalDiv{
-  top: 50%;
-}
-.en{
-  position: fixed;
-  right: -30px;
-  transform: rotate(90deg);
-  top: 100px;
-}
+  
