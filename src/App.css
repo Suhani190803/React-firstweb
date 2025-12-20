@@ -1,33 +1,15 @@
-.faqouter{
-  width: 1320px;
+.form{
+  width: 1170px;
   margin: auto;
-  
-}
-.App h1{
+  display: flex;
+  gap: 20px;
   text-align: center;
-  font-weight: bold;
 }
-.faqItems{
-  border: 1px solid red;
-  margin-bottom: 20px;
+.form input{
+  flex-basis: 80%;
+   height: 40px;
 }
-.faqItems h2{
-  margin: 0px;
-  padding: 8px;
-  background-color: #282c34;
-  color: white;
-  text-align: left;
+.form button{
+  flex-basis:20%;
+  outline: auto;
 }
-.faqItems p{
-  text-align: left;
-  height: 0px;
-  margin: 0px;
-  transform: scaleY(0);
-  padding: 0px;
-}
-.activeAns{
-  height: auto;
-  transform: scaleY(1);
-  padding : 10px;
-}
-  
